@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Audio Waveform (Go 1.22)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        #waveform {
+            font-family: monospace;
+            white-space: pre;
+            line-height: 1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Audio Waveform (Go 1.22)</h1>
+    <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL">
+    <button onclick="startWaveform()">Generate Waveform</button>
+    <div id="waveform"></div>
+    <script src="app.js"></script>
+</body>
+</html>
