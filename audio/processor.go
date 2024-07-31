@@ -2,6 +2,7 @@ package audio
 
 import (
 	"io"
+	"log"
 	"time"
 
 	"github.com/thiagomachadox/realtime-waveform/waveform"

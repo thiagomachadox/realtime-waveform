@@ -11,7 +11,7 @@ function startWaveform() {
         socket.close();
     }
 
-    socket = new WebSocket('ws://' + window.location.host + '/ws');
+    socket = new WebSocket('ws://localhost:8080/ws');
 
     socket.onopen = function(e) {
         console.log('WebSocket connection established');

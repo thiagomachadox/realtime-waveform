@@ -1,7 +1,7 @@
 package downloader
 
 import (
-	"context"
+	// "context"
 	"fmt"
 	"io"
 	"regexp"
