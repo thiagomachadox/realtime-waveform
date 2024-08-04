@@ -11,7 +11,7 @@ function startWaveform() {
         socket.close();
     }
 
-    socket = new WebSocket('ws://localhost:8080/ws');
+    socket = new WebSocket('ws://' + window.location.host + '/ws');
 
     socket.onopen = function(e) {
         console.log('WebSocket connection established');
@@ -19,6 +19,7 @@ function startWaveform() {
     };
 
     socket.onmessage = function(event) {
+        console.log('Received waveform data:', event.data);
         document.getElementById('waveform').textContent = event.data;
     };
 
@@ -34,3 +35,6 @@ function startWaveform() {
         console.log(`WebSocket error: ${error.message}`);
     };
 }
+
+// Add this line to log when the script loads
+console.log('app.js loaded');
